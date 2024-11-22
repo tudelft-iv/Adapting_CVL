@@ -12,7 +12,8 @@ VIGOR dataset can be found at https://github.com/Jeff-Zilence/VIGOR.
 We use the revised ground truth from https://github.com/tudelft-iv/SliceMatch <br />
 KITTI dataset can be found at https://github.com/shiyujiao/HighlyAccurate <br />
 
-
+### Models
+Our trained models are available at: https://drive.google.com/drive/folders/1Uw1HukdXxuINDs65zi96oIDy2XNM2k2m?usp=sharing
 
 ### Citation
 ```
