@@ -1,7 +1,5 @@
 # ECCV2024: Adapting Fine-Grained Cross-View Localization to Areas without Fine Ground Truth
-[[`Paper`](https://arxiv.org/abs/2406.00474))] [[`Presentation`](https://www.youtube.com/watch?v=U9njuEIdVL8)] [[`BibTeX`](#citation)]
-
-## Code and trained models coming mid November 2024
+[[`Paper`](https://link.springer.com/chapter/10.1007/978-3-031-72751-1_23))] [[`Arxiv`](https://arxiv.org/abs/2406.00474))] [[`Presentation`](https://www.youtube.com/watch?v=U9njuEIdVL8)] [[`BibTeX`](#citation)]
 
 
 ### Abstract
