@@ -38,6 +38,8 @@ pretrained_model = './models/CCVPE/teacher/model.pt'
 save_model_path = './models/CCVPE/final_student/'
 dataset_root='/home/ziminxia/Work/datasets/VIGOR'
 label = 'CCVPE_VIGOR_final_student'
+if not os.path.exists('./results'):
+    os.makedirs('./results')
 
 vigor = VIGORDataset(root=dataset_root, transform=(transform_grd, transform_sat), known_ori=known_ori)
 
