@@ -105,7 +105,10 @@ class VIGORDataset(Dataset):
         if self.known_ori:
             rotation = 0
         else:
-            rotation = self.predefined_random_rot[idx]
+            if self.predefined_random_rot is None:
+                rotation = np.random.uniform(low=0.0, high=1.0)
+            else:
+                rotation = self.predefined_random_rot[idx]
 
         grd = torch.roll(grd, (torch.round(torch.as_tensor(rotation)*grd.size()[2]).int()).item(), dims=2)
                 
