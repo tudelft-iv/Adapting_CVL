@@ -15,6 +15,18 @@ KITTI dataset can be found at https://github.com/shiyujiao/HighlyAccurate <br />
 ### Models
 Our trained models are available at: https://drive.google.com/drive/folders/1Uw1HukdXxuINDs65zi96oIDy2XNM2k2m?usp=sharing
 
+### Training and Testing
+Note: We modified the original [CCVPE](https://github.com/tudelft-iv/CCVPE) model slightly. It now also uses reflect padding in the aerial encoder, which is why our teacher model performs slightly better than the original CCVPE.
+
+Training the final student model on VIGOR: `python train_CCVPE_on_VIGOR.py ` <br />
+
+Testing the final student model: `python evaluate_CCVPE_on_VIGOR.py --inference_on=test --model=final_student --known_ori=True ` <br />
+If you wish to test the teacher or the auxiliary student model, use `--model=teacher` or `--model=auxiliary_student`.
+Testing with unknown orientation: `--known_ori=False`.
+
+Generate Pseudo GT from the teacher or auxiliary student model: `python evaluate_CCVPE_on_VIGOR.py --inference_on=train --model=teacher --known_ori=True `
+
+
 ### Citation
 ```
 @inproceedings{xia2024adapting,
